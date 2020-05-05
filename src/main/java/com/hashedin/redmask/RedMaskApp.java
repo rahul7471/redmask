@@ -44,6 +44,7 @@ public class RedMaskApp implements Callable<Integer> {
   public Integer call() {
 
     MaskConfiguration config = null;
+    log.info("Making chnages to test github action.");
 
     try {
       config = new ObjectMapper().readValue(new File(configFilePath), MaskConfiguration.class);
